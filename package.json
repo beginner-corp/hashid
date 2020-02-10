@@ -1,21 +1,14 @@
 {
   "name": "@begin/hashid",
-  "description": "Generate ids from numbers",
+  "description": "Lightweight, zero-dependency, Node-optimized way to generate unique IDs from numbers",
   "version": "1.0.0",
   "scripts": {
     "precommit": "npm run lint && npm run test",
     "lint": "eslint index.js tests --fix",
-    "test": "mocha tests",
+    "test": "npm run lint && mocha tests",
     "coverage": "nyc npm test && nyc report --reporter=text-summary",
     "clean": "rm -rf coverage .nyc_output npm-debug.log",
     "all": "npm run lint && npm run coverage && npm run clean"
-  },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^5.4.0",
-    "husky": "^0.14.3",
-    "mocha": "^5.2.0",
-    "nyc": "^13.0.1"
   },
   "license": "MIT",
   "keywords": [
@@ -27,5 +20,12 @@
     "decode",
     "encrypt",
     "decrypt"
-  ]
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.1",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0"
+  }
 }
