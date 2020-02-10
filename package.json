@@ -1,6 +1,6 @@
 {
   "name": "@begin/hashid",
-  "description": "Lightweight, zero-dependency, Node-optimized way to generate unique IDs from numbers",
+  "description": "Lightweight, zero-dependency, Node.js-optimized way to generate unique IDs from numbers",
   "version": "1.0.0",
   "scripts": {
     "precommit": "npm run lint && npm run test",
@@ -8,7 +8,8 @@
     "test": "npm run lint && mocha tests",
     "coverage": "nyc npm test && nyc report --reporter=text-summary",
     "clean": "rm -rf coverage .nyc_output npm-debug.log",
-    "all": "npm run lint && npm run coverage && npm run clean"
+    "all": "npm run lint && npm run coverage && npm run clean",
+    "rc": "npm version prerelease --preid RC"
   },
   "license": "MIT",
   "keywords": [
