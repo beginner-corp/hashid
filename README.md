@@ -1,6 +1,6 @@
 # HashID
 
-## Lightweight, zero-dependency, Node.js-optimized way to generate unique IDs from numbers
+### A lightweight, zero-dependency, Node.js-optimized module for generating unique IDs from numbers
 
 ![Node CI](https://github.com/smallwins/hashid/workflows/Node%20CI/badge.svg)
 

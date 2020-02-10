@@ -1,6 +1,6 @@
 {
   "name": "@begin/hashid",
-  "description": "Lightweight, zero-dependency, Node.js-optimized way to generate unique IDs from numbers",
+  "description": "A lightweight, zero-dependency, Node.js-optimized module for generating unique IDs from numbers",
   "version": "1.0.0",
   "scripts": {
     "precommit": "npm run lint && npm run test",
